@@ -24,9 +24,9 @@ public class BaseAlgorithms {
 
     public static int getMax(int[] data){
         int temp = data[0];
-        for (int i = 0; i < data.length; i++) {
-            if(temp < data[i]){
-                temp = data[i];
+        for (int datum : data) {
+            if (temp < datum) {
+                temp = datum;
             }
         }
         return temp;
@@ -34,17 +34,17 @@ public class BaseAlgorithms {
 
     public static int getMin(int[] data){
         int temp = data[0];
-        for (int i = 0; i < data.length; i++) {
-            if(temp > data[i]){
-                temp = data[i];
+        for (int datum : data) {
+            if (temp > datum) {
+                temp = datum;
             }
         }
         return temp;
     }
 
     public static void printArray(int[] data){
-        for (int i = 0; i < data.length ; i++) {
-            System.out.print(data[i] + "  ");
+        for (int datum : data) {
+            System.out.print(datum + "  ");
 
         }
         System.out.println();

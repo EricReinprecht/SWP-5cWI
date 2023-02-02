@@ -1,9 +1,7 @@
 package I_BasisAlgorithmen;
 
 import java.util.Scanner;
-
-public class Addieren {
-
+public class AddUp {
     public static void main(String[] args) {
         System.out.println("Enter numbers: ");
         Scanner number1 = new Scanner(System.in);
@@ -25,19 +23,18 @@ public class Addieren {
 
 
         for (int i = 0; i < repetitions; i++) {
-            int partialresult = firstNumber % 10 + secondNumber % 10;
-            int addup = partialresult / 10;
-            if (partialresult == 0 && firstNumber == 0 && secondNumber == 0) {
+            int partialResult = firstNumber % 10 + secondNumber % 10;
+            int addUp = partialResult / 10;
+            if (partialResult == 0 && firstNumber == 0 && secondNumber == 0) {
                 break;
             } else {
-                System.out.println(partialresult % 10);
-                if (partialresult >= 10) {
-                    firstNumber = firstNumber / 10 + addup;
-                    secondNumber = secondNumber / 10;
+                System.out.println(partialResult % 10);
+                if (partialResult >= 10) {
+                    firstNumber = firstNumber / 10 + addUp;
                 } else {
                     firstNumber = firstNumber / 10;
-                    secondNumber = secondNumber / 10;
                 }
+                secondNumber = secondNumber / 10;
             }
         }
     }

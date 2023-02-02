@@ -2,7 +2,7 @@ package I_BasisAlgorithmen;
 
 import java.util.Scanner;
 
-public class Ostersonntag {
+public class EasterSunday {
 
     public static void main(String[] args) {
         Scanner Year = new Scanner(System.in);
@@ -14,12 +14,11 @@ public class Ostersonntag {
         int Q = N/4;
         int W = (N+Q+31-M) % 7;
         int P = 25-M-W;
+
         if (P>0){
-            System.out.println("BasisAlgorithmen.Ostersonntag ist der " + P + ". April");
-
+            System.out.println("Ostersonntag ist der " + P + ". April");
         }else{
-            System.out.println("BasisAlgorithmen.Ostersonntag ist der " + P+31 + ". März");
-
+            System.out.println("Ostersonntag ist der " + P+31 + ". März");
         }
     }
 

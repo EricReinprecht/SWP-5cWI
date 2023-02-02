@@ -21,7 +21,6 @@ public class SortingProcesses {
                 }
             }
         }
-
         return data;
     }
 
@@ -48,16 +47,14 @@ public class SortingProcesses {
             }
             data[j + 1] = key;
         }
-
         return data;
     }
 
 
         public static void printArray(int[] data){
-        for (int i = 0; i < data.length ; i++) {
-            System.out.print(data[i] + "  ");
-
-        }
+            for (int datum : data) {
+                System.out.print(datum + "  ");
+            }
         System.out.println();
         System.out.println();
     }
