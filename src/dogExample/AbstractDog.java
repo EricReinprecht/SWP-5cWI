@@ -1,4 +1,4 @@
-package Dogs;
+package dogExample;
 public abstract class AbstractDog implements Dog {
     String name;
     BarkStrategy barkStrategy;

@@ -1,4 +1,4 @@
-package ObserverPattern;
+package observerPattern;
 public class Main {
     public static void main(String[] args) {
         SunCollector s1 = new SunCollector();

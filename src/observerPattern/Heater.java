@@ -1,4 +1,4 @@
-package ObserverPattern;
+package observerPattern;
 public class Heater implements Observer {
     @Override
     public void inform() {

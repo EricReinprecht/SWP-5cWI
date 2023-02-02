@@ -1,4 +1,4 @@
-package Dogs;
+package dogExample;
 
 public class Poodle extends AbstractDog{
     public Poodle(BarkStrategy barkStrategy, String name) {

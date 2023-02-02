@@ -1,4 +1,4 @@
-package Dogs;
+package dogExample;
 
 /**
  * @author Emanuel Zech
